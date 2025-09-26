@@ -2,4 +2,4 @@
 set -eu
 cd $(dirname $(realpath "${BASH_SOURCE[0]}"))
 
-cd dist && caddy file-server --listen :8080
+node --test ./src/**/*.test.ts

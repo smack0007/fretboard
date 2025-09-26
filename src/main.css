@@ -1,0 +1,69 @@
+#app {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.fretboard {
+  background-color: silver;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.fretboard .fret {
+  background-color: #deb887;
+  align-content: center;
+  text-align: center;
+  min-width: 70px;
+  margin-right: 5px;
+}
+
+.fretboard .fret.fret-0 {
+  min-width: 20px;
+  background-color: #a9a9a9;
+}
+
+.fretboard .fret .index {
+  display: flex;
+  justify-content: center;
+}
+
+.fretboard .fret .index .blank {
+  width: 10px;
+  height: 10px;
+}
+
+.fretboard .fret .index .dot {
+  background: black;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+.fretboard .fret .tone {
+  cursor: default;
+}
+
+.fretboard .fret .tone.hover {
+  background: #6495ed;
+  border-radius: 50%;
+}
+
+.fretboard .fret .tone.highlight-1 {
+  background: #483d8b;
+  border-radius: 50%;
+}
+
+.fretboard .fret .tone.highlight-2 {
+  background: #8a2be2;
+  border-radius: 50%;
+}
